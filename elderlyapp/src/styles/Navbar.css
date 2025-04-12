@@ -1,0 +1,119 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px; /* fixed slim height */
+  padding: 0 3rem; /* horizontal padding only */
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(62, 232, 255, 0.4),
+    rgba(69, 224, 230, 0.2) 20px,
+    rgba(150, 216, 230, 0.2) 20px,
+    rgba(150, 216, 230, 0.2) 20px
+  );
+  color: black;
+  font-size: 16px;
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+}
+
+/* Shift the logo upward by 5px */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+  margin-top: -5px;
+}
+
+.navbar-logo i {
+  font-size: 24px; /* Icon size */
+  margin-right: 8px;
+  color: red;
+}
+
+.rightSide {
+  display: flex;
+  gap: 20px; /* space between links */
+  padding-right: 1rem; /* extra padding on the right side */
+}
+
+/* Shift the buttons upward by 5px */
+.rightSide a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px; /* slightly bigger font size */
+  font-weight: normal;
+  display: flex;
+  align-items: center; /* align icon and text */
+  padding: 0.5rem 1rem; /* button-like padding */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  border-radius: 4px;
+  margin-top: -5px;
+}
+
+.rightSide a i {
+  margin-right: 8px; /* space between icon and text */
+  color: blue;
+}
+
+.rightSide a:hover {
+  color: blue;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rightSide a:active {
+  transform: scale(0.98);
+}
+
+/* Button for toggling the menu (on mobile) */
+.menu-toggle {
+  display: none; /* Hide by default */
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rightSide {
+    display: none; /* Hide the right side links by default */
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .rightSide.open {
+    display: flex; /* Show the menu when toggled */
+  }
+
+  .menu-toggle {
+    display: block; /* Show the menu toggle button */
+  }
+
+  .leftSide,
+  .rightSide {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
