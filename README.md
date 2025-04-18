@@ -19,7 +19,7 @@ Elderly Connect is a web application designed to help elderly individuals stay s
     3. GroceryHelp
 
 ## 🛠️ Technologies Used 🛠️
-1. ⚛️ Frontend: React
+1. ⚛️ ### Frontend: React
 2. 🎨 Styling: Bootstrap
 3. 🔥 Backend: Firebase, Authentication, Firestore
 4. 🗃️ Database: Firebase Firestore.
