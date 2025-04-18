@@ -1,9 +1,9 @@
 # elderlyconnect.github.io
  
-# Elderly Connect
+# ❤️ Elderly Connect ❤️
 Elderly Connect is a web application designed to assist elderly individuals in staying connected with their community and accessing essential services. This project was developed as part of a Final Year Project to address the challenges faced by the elderly in digital communication and service accessibility.
 
-## Features
+## ✨ Features ✨
 1. 👥 User & Volunteer Registration/Login: Separate login flows for users and volunteers, with secure authentication.
 2. 📝 Profile Setup: Users and volunteers can set up their profiles with interests, location, and gGender preferences for better matching.
 3. 💬 Real-Time Chat with Firebase Firestore: Secure one-on-one and group chat features using Firebase for real-time messaging.
@@ -16,14 +16,14 @@ Elderly Connect is a web application designed to assist elderly individuals in s
     2. TechHelp
     3. GroceryHelp
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used 🛠️
 1. Frontend: React
 2. CSS: Bootstrap
 3. Backend: JavaScript
 4. Database: Firebase FireStore
 5. APIs: Speech Synthesis API
 
-## 🚀 Firebase Environment Setup
+## 🚀 Firebase Environment Setup 🚀
 To run this project locally with Firebase integration
 1. Create a Firebase Project
    Go to Firebase Console and create a new project
