@@ -1,6 +1,6 @@
 # elderlyconnect.github.io
  
-# ❤️ Elderly Connect ❤️
+# 💙 Elderly Connect 💙
 Elderly Connect is a web application designed to assist elderly individuals in staying connected with their community and accessing essential services. This project was developed as part of a Final Year Project to address the challenges faced by the elderly in digital communication and service accessibility.
 
 ## ✨ Features ✨
