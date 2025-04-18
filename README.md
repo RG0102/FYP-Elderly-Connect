@@ -16,12 +16,19 @@ Elderly Connect is a web application designed to assist elderly individuals in s
     2. TechHelp
     3. GroceryHelp
 
-## Technologies Used
+## 🛠️ Technologies Used
 1. Frontend: React
 2. CSS: Bootstrap
 3. Backend: JavaScript
 4. Database: Firebase FireStore
 5. APIs: Speech Synthesis API
+
+## 🚀 Firebase Environment Setup
+To run this project locally with Firebase integration
+1. Create a Firebase Project
+   Go to Firebase Console and create a new project
+2. Enable services
+   Go to Authentication
 
 ## Installation
 1. Clone the repository: git clone https://github.com/RG0102/FYP-Elderly-Connect.git
