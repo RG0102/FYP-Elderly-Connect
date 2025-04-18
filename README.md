@@ -4,10 +4,17 @@
 Elderly Connect is a web application designed to assist elderly individuals in staying connected with their community and accessing essential services. This project was developed as part of a Final Year Project to address the challenges faced by the elderly in digital communication and service accessibility.
 
 ## Features
-1. User-Friendly Interface: Simplified design tailored for ease of use by elderly users.
-2. Community Engagement: Tools to connect with local community events and groups.
-3. Service Access:
-4. Accessibility Options: Adjustable text sizes, high-contrast modes, and voice assistance features
+1. 👥 User & Volunteer Registration/Login: Separate login flows for users and volunteers, with secure authentication.
+2. 📝 Profile Setup: Users and volunteers can set up their profiles with interests, location, and gGender preferences for better matching.
+3. 💬 Real-Time Chat with Firebase Firestore: Secure one-on-one and group chat features using Firebase for real-time messaging.
+4. 🔗 Chat Options: Includes individual chat functionalities. User can talk to volunteers.
+5. 📅 Volunteer Appointment Booking: Users can book appointments with volunteers for available services.
+6. 🔄 Appointment Management: Users can add, edit, or cancel appointments with volunteers through as simple and user-friendly interface.
+7. 🔊 Text-to-Speech Accessibility: Text-to-Speech feature enhances accessibility for users with visual or reading difficulties.
+8. 🤝 Volunteer Services: Volunteers can offer services such as:
+    1. Bingo
+    2. TechHelp
+    3. GroceryHelp
 
 ## Technologies Used
 1. Frontend: React
