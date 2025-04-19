@@ -7,7 +7,7 @@ Elderly Connect is a web application designed to help elderly individuals stay s
 
 ## ✨ Features ✨
 1. 👥 User & Volunteer Registration/Login: Separate login flows for users and volunteers, with secure authentication.
-2. 📝 Profile Setup: Users and volunteers can set up their profiles with interests, location, and gGender preferences for better matching.
+2. 📝 Profile Setup: Users and volunteers can set up their profiles with interests, location, and Gender preferences for better matching.
 3. 💬 Real-Time Chat with Firebase Firestore: Secure one-on-one and group chat features using Firebase for real-time messaging.
 4. 🔗 Chat Options: Includes individual chat functionalities. User can talk to volunteers.
 5. 📅 Volunteer Appointment Booking: Users can book appointments with volunteers for available services.
@@ -19,9 +19,9 @@ Elderly Connect is a web application designed to help elderly individuals stay s
     3. GroceryHelp
 
 ## 🛠️ Technologies Used 🛠️
-1. ⚛️ ### Frontend: React
+1. ⚛️ Frontend: React
 2. 🎨 Styling: Bootstrap
-3. 🔥 Backend: Firebase, Authentication, Firestore
+3. 🔥 Backend: JavaScript
 4. 🗃️ Database: Firebase Firestore.
 5. 🗣️ Accessibility API: React Web Speech API (Speech Synthesis)
 6. 🌐 Hosting: Firebase Hosting (if deployed)
@@ -42,7 +42,7 @@ To run this project locally with Firebase integration
 
 Note: Ensure you have a local server setup if the application requires backend services
 
-⚠️ Make usre Firebase configuration is set correctly in the project files for chat and login functionlaities to work.
+⚠️ Make sure Firebase configuration is set correctly in the project files for chat and login functionlaities to work.
 
 Usage:
 1. Users sign up, set up profile, and start chatting or booking appointments.
