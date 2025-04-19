@@ -1,7 +1,7 @@
 # elderlyconnect.github.io
  
 # 💙 Elderly Connect 💙
-Elderly Connect is a web application designed to help elderly individuals stay socially connected and access essential servies with ease. Developed as part of a Final Year Project, the platform matches users using advanced mathching algorithm (IBCMA) based on shared interests and provides real-time communication and commmunity features.
+Elderly Connect is a web application designed to help elderly individuals stay socially connected and access essential services with ease. Developed as part of a Final Year Project, the platform matches users using advanced mathching algorithm (IBCMA) based on shared interests and provides real-time communication and commmunity features.
 
 ![Screenshot 2025-04-07 114528](https://github.com/user-attachments/assets/24ac4492-ea96-432d-b93b-4f30e7df2689)
 
