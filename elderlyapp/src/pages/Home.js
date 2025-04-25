@@ -18,8 +18,7 @@ function Home() {
 
     const navigate = useNavigate();
 
-
-      // Define how to handle commands
+    // Handle voice commands
     const handleCommand = (command) => {
       console.log("Command received:", command);
       if (command.includes("user") || command.includes("user login")|| command.includes("login")) {
@@ -62,11 +61,8 @@ function Home() {
         setTimeout(speakAfterVoicesLoad, 100);
       }
     };
-
-  
-
+    
     speakAfterVoicesLoad();
-
     return () => {
       if (synth.speaking) synth.cancel();
     };
