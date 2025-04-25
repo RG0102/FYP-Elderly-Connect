@@ -12,7 +12,7 @@ const ManageAppointment = () => {
   const [updatedData, setUpdatedData] = useState({});
 
 
-      // Define how to handle commands
+      // This function uses voice commands
     const handleCommand = (command) => {
       console.log("Command received:", command);
       if (command.includes("back") || command.includes("go back")) {
