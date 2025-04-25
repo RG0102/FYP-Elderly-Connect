@@ -2,13 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import useSpeechRecognition from "../hooks/useSpeechRecognition.js";
 
-
 const GroceryHelp = () => {
   const navigate = useNavigate();
 
-
-
-    // Define how to handle commands
+  // Define how to handle commands
   const handleCommand = (command) => {
     console.log("Command received:", command);
     if (command.includes("back") || command.includes("go back")) {
@@ -18,10 +15,7 @@ const GroceryHelp = () => {
     }
   };
   
-  // Use the custom hook
   useSpeechRecognition(handleCommand);
-
-
 
   return (
     <div className="container text-center mt-5">
