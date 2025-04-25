@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion"; // For animations
-import "../styles/HomePage.css"; // Ensure the CSS path is correct
+import { motion } from "framer-motion"; 
+import "../styles/HomePage.css"; 
 import useSpeechRecognition from "../hooks/useSpeechRecognition.js";
 import image1 from "../assets/images/image1.webp";
 import image2 from "../assets/images/image2.avif";
