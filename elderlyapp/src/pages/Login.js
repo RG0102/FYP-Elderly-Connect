@@ -10,8 +10,7 @@ import {
 import * as Components from "./Components";
 
 function App() {
-  console.log("Firebase Auth instance:", auth);
-
+  
   const [isSignIn, setIsSignIn] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,7 +19,7 @@ function App() {
   const navigate = useNavigate();
   const commandCooldown = useRef(false);
 
-  // Refs to always have the latest email and password values
+  // Use refs to always have the latest email and password values
   const emailRef = useRef("");
   const passwordRef = useRef("");
 
