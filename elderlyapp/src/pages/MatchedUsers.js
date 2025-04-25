@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { auth, db } from "../firebase";
 import useSpeechRecognition from "../hooks/useSpeechRecognition.js";
 
-// Jaccard Index & Cosine Similarity functions
+// Jaccard Index 
 function jaccardIndex(interestsA, interestsB) {
   const setA = new Set(interestsA);
   const setB = new Set(interestsB);
@@ -13,6 +13,7 @@ function jaccardIndex(interestsA, interestsB) {
   return unionSize > 0 ? intersectionSize / unionSize : 0;
 }
 
+// Cosine Similarity functions
 function cosineSimilarity(interestsA, interestsB) {
   const setA = new Set(interestsA);
   const setB = new Set(interestsB);
@@ -29,6 +30,7 @@ const MatchedUsers = () => {
   const [currentUser, setCurrentUser] = useState(null);
   const navigate = useNavigate();
 
+  // This function uses voice commands and it also reads people names.
   const handleCommand = (command) => {
     const lower = command.toLowerCase();
     if (lower.includes("dashboard") || lower.includes("go back")) {
@@ -64,12 +66,16 @@ const MatchedUsers = () => {
       if (parentUserId === currentUserId) return;
       allProfiles.push({ id: doc.id, ...doc.data(), userId: parentUserId });
     });
+
+    //Calculate the march user profiles by using advanced matching algorithms
     const computedMatches = allProfiles.map((profile) => {
       const profileInterests = profile.interests || [];
       const jIndex = jaccardIndex(myProfile.interests, profileInterests);
       const cosSim = cosineSimilarity(myProfile.interests, profileInterests);
       return { ...profile, compatibilityScore: (jIndex + cosSim) / 2 };
     });
+
+    // It sort the matching algorithm in descending order
     computedMatches.sort((a, b) => b.compatibilityScore - a.compatibilityScore);
     setMatches(computedMatches);
     setLoading(false);
@@ -94,9 +100,10 @@ const MatchedUsers = () => {
     );
   };
 
+  //Crreate a group chat for elderly people
   const handleCreateGroupChat = async () => {
     if (!currentUser) return;
-    const title = window.prompt("Enter group chat title:");
+    const title = window.prompt("Enter a group chat title:");
     if (!title) return;
     const participants = [currentUser.uid, ...selectedUsers];
     try {
