@@ -25,7 +25,7 @@ Elderly Connect is a web application designed to help elderly individuals stay s
 3. 🔥 Backend: JavaScript
 4. 🗃️ Database: Firebase Firestore.
 5. 🗣️ Accessibility API: React Web Speech API (Speech Synthesis)
-6. 🌐 Hosting: Firebase Hosting (if deployed)
+6. 🌐 Hosting: Firebase Hosting 
 
 ## Installation
 1. Clone the repository: git clone https://github.com/RG0102/FYP-Elderly-Connect.git
